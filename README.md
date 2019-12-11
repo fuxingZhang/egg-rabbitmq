@@ -31,7 +31,7 @@ Description here.
 ## Install
 
 ```bash
-$ npm i egg-rabbitmq --save
+$ npm i egg-amqplib-plus --save
 ```
 
 ## Configuration
