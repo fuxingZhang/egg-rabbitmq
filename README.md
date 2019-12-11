@@ -40,7 +40,7 @@ $ npm i egg-amqplib-plus --save
 // {app_root}/config/plugin.js
 exports.rabbitmq = {
   enable: true,
-  package: 'egg-rabbitmq',
+  package: 'egg-amqplib-plus',
 };
 ```
 see [config/config.default.js](config/config.default.js) for more detail.
