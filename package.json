@@ -1,6 +1,6 @@
 {
   "name": "egg-amqplib-plus",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "egg rabbitmq plugin",
   "eggPlugin": {
     "name": "rabbitmq"
@@ -48,12 +48,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fuxingZhang/rabbitmq.git"
+    "url": "git+https://github.com/fuxingZhang/egg-rabbitmq.git"
   },
   "bugs": {
     "url": "https://github.com/eggjs/egg/issues"
   },
-  "homepage": "https://github.com/fuxingZhang/rabbitmq#readme",
+  "homepage": "https://github.com/fuxingZhang/egg-rabbitmq#readme",
   "author": "Zhang Fu Xing <502545703@qq.com>",
   "license": "MIT"
 }
