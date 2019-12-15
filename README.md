@@ -74,7 +74,7 @@ Usage:
 ### Multiple database instance
 
 ```js
-exports.mysql = {
+exports.rabbitmq = {
   clients: {
     // clientId, access the client instance by app.rabbitmq.get('clientId')
     client1: {
@@ -98,10 +98,6 @@ Usage:
 const ch1 = app.rabbitmq.get('client1'); 
 const ch2 = app.rabbitmq.get('client2'); 
 ```
-
-## Example
-
-<!-- example here -->
 
 ## Questions & Suggestions
 
