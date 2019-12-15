@@ -1,6 +1,6 @@
 # egg-rabbitmq
 
-[amqplib](https://github.com/squaremo/amqp.node) plugin for Egg.js.
+[amqplib](https://github.com/squaremo/amqp.node) plugin for Egg.js
 
 > NOTE: This plugin just for integrate amqplib into Egg.js, more documentation please visit http://www.squaremobius.net/amqp.node/.
 
@@ -41,7 +41,7 @@ exports.rabbitmq = {
 ```
 see [config/config.default.js](config/config.default.js) for more detail.
 
-### Simple database instance
+### Simple instance
 
 ```js
 // {app_root}/config/config.default.js
@@ -71,7 +71,7 @@ Usage:
 }).catch(console.error);
 ```
 
-### Multiple database instance
+### Multiple instance
 
 ```js
 exports.rabbitmq = {
