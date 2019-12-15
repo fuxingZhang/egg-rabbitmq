@@ -1,7 +1,7 @@
 {
   "name": "@eggplugin/rabbitmq",
-  "version": "1.1.1",
-  "description": "egg rabbitmq plugin",
+  "version": "1.1.2",
+  "description": "RabbitMq plugin for Egg",
   "eggPlugin": {
     "name": "rabbitmq"
   },

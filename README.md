@@ -24,10 +24,6 @@
 [download-image]: https://img.shields.io/npm/dm/@eggplugin/rabbitmq.svg?style=flat-square
 [download-url]: https://npmjs.org/package/@eggplugin/rabbitmq
 
-<!--
-Description here.
--->
-
 ## Install
 
 ```bash
