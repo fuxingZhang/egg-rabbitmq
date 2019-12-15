@@ -51,7 +51,7 @@ see [config/config.default.js](config/config.default.js) for more detail.
 // {app_root}/config/config.default.js
 exports.rabbitmq = {
   client: {
-    url: 'amqp://guest:guest@localhost',  
+    url: 'amqp://guest:guest@localhost:5672',  
   },
   // load into app, default is open
   app: true,
@@ -82,7 +82,7 @@ exports.mysql = {
   clients: {
     // clientId, access the client instance by app.rabbitmq.get('clientId')
     client1: {
-      url: 'amqp://guest:guest@localhost',  
+      url: 'amqp://guest:guest@localhost:5672',  
     },
     client2: {
       url: 'amqp://guest:guest@xxx',  
