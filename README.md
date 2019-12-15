@@ -31,7 +31,7 @@ Description here.
 ## Install
 
 ```bash
-$ npm i egg-amqplib-plus --save
+$ npm i @eggplugin/rabbitmq --save
 ```
 
 ## Configuration
@@ -40,7 +40,7 @@ $ npm i egg-amqplib-plus --save
 // {app_root}/config/plugin.js
 exports.rabbitmq = {
   enable: true,
-  package: 'egg-amqplib-plus',
+  package: '@eggplugin/rabbitmq',
 };
 ```
 see [config/config.default.js](config/config.default.js) for more detail.

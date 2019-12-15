@@ -1,5 +1,5 @@
 {
-  "name": "egg-amqplib-plus",
+  "name": "@eggplugin/rabbitmq",
   "version": "1.0.4",
   "description": "egg rabbitmq plugin",
   "eggPlugin": {
