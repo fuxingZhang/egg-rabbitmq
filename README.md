@@ -51,7 +51,6 @@ const ch = app.rabbitmq;
 const { conn, ch } = app.rabbitmq;
 ```
 
-
 ## Usage for v2.x
 
 ### Simple instance  
