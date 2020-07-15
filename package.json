@@ -1,6 +1,6 @@
 {
   "name": "@eggplugin/rabbitmq",
-  "version": "1.1.4",
+  "version": "2.0.0",
   "description": "RabbitMq plugin for Egg",
   "eggPlugin": {
     "name": "rabbitmq"
@@ -13,7 +13,7 @@
     "egg-plugin"
   ],
   "dependencies": {
-    "amqplib": "^0.5.5"
+    "amqplib": "^0.5.6"
   },
   "devDependencies": {
     "autod": "^3.0.1",

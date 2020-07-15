@@ -41,6 +41,81 @@ exports.rabbitmq = {
 ```
 see [config/config.default.js](config/config.default.js) for more detail.
 
+## *** Warning *** 
+v2.x and v1.0 are not compatible
+```js
+// v.1x  channel
+const ch = app.rabbitmq;
+
+// v2.x  connection and channel 
+const { conn, ch } = app.rabbitmq;
+```
+
+
+## Usage for v2.x
+
+### Simple instance  
+
+#### config
+```js
+// {app_root}/config/config.default.js
+exports.rabbitmq = {
+  client: {
+    url: 'amqp://guest:guest@localhost:5672',  
+  },
+  // load into app, default is open
+  app: true,
+  // load into agent, default is close
+  agent: false,
+};
+```
+
+#### exmaple:
+```js
+(async () => {
+  // you can access to connection and channel using app.rabbitmq.
+  const { ch, conn } = app.rabbitmq;
+  // assertQueue
+  await ch.assertQueue(queueName, { durable: true });
+  // checkQueue
+  await ch.checkQueue(queueName);
+  // sendToQueue
+  ch.sendToQueue(queueName, Buffer.from(msg));
+  // If you want to get a channel which uses "confirmation mode"
+  const confirmChannel = await conn.createConfirmChannel();
+}).catch(console.error);
+```
+
+### Multiple instance
+
+```js
+exports.rabbitmq = {
+  clients: {
+    // clientId, access the client instance by app.rabbitmq.get('clientId')
+    client1: {
+      url: 'amqp://guest:guest@localhost:5672',  
+    },
+    client2: {
+      url: 'amqp://guest:guest@xxx',  
+    },
+    // ...
+  },
+  // load into app, default is open
+  app: true,
+  // load into agent, default is close
+  agent: false,
+};
+```
+
+Usage:
+
+```js
+const { ch: ch1, conn: conn1 } = app.rabbitmq.get('client1'); 
+const { ch: ch2, conn: conn2 } = app.rabbitmq.get('client2'); 
+```
+
+## Usage for v1.x
+
 ### Simple instance
 
 ```js
