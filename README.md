@@ -42,7 +42,7 @@ exports.rabbitmq = {
 see [config/config.default.js](config/config.default.js) for more detail.
 
 ## *** Warning *** 
-v2.x and v1.0 are not compatible
+v2.x and v1.x are not compatible
 ```js
 // v.1x  channel
 const ch = app.rabbitmq;
